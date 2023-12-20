@@ -13,3 +13,7 @@ body{
   font-family: Roboto Condensed;
   -webkit-font-smoothing: antialiased;
 }
+
+#nav a.active{
+  color: #0ea5e9;
+}
