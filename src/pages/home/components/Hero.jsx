@@ -10,8 +10,8 @@ const Hero = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, ad rerum repellat. Sequi, labore, illo. Ducimus voluptates quidem obcaecati, ad.
           </p>
           <div className='mt-5 flex flex-wrap gap-4'>
-            <button className='bg-sky-500 hover:bg-sky-700 uppercase py-[10px] px-7 rounded-3xl border-2 border-sky-500 hover:border-sky-700 font-semibold'>Explore us</button>
-            <button className='uppercase py-[10px] px-7 rounded-3xl border-2 border-white font-semibold'>Learn more</button>
+            <button className='bg-sky-500 hover:bg-sky-700 uppercase py-[10px] px-7 rounded-3xl border border-sky-500 hover:border-sky-700 text-[15px]'>Explore us</button>
+            <button className='uppercase py-[10px] px-7 rounded-3xl border border-white text-[15px]'>Learn more</button>
           </div>
         </div>
       </div>

@@ -1,14 +1,7 @@
-// import VisibilitySensor from 'react-visibility-sensor'
 import { stats } from "../constants";
-// import CountUp, { useCountUp } from 'react-countup';
+import CountUp from 'react-countup';
 
 const Stats = () => {
-  // useCountUp({
-  //   ref: 'counter',
-  //   enableScrollSpy: true,
-  //   scrollSpyDelay: 500,
-  //   scrollSpyOnce: true,
-  // })
 
   return (
     <div className="py-14 px-[20px] md:px-[50px] md:py-[70px] lg:px-[100px]">
@@ -24,15 +17,9 @@ const Stats = () => {
               <span className="block mx-auto w-fit text-sky-500 text-5xl">
                 <Icon  />
               </span>
-              {/* <span className="text-3xl font-semibold text-gray-800">
-              <VisibilitySensor>
-                {({ isVisible }) => (
-                  <div style={{ height: 30 }}>
-                    {isVisible ? <CountUp end={stat.figure} /> : null}
-                  </div>
-                )}
-              </VisibilitySensor>
-              </span> */}
+              <div className={`text-3xl font-semibold text-gray-800`}>
+                <CountUp end={stat.figure} enableScrollSpy scrollSpyOnce />
+              </div>
               <span className="text-lg text-gray-700 font-semibold">{stat.text}</span>
             </div>
           )
