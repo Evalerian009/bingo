@@ -5,7 +5,7 @@ const About = lazy(() => import('./pages/about/About'))
 const Services = lazy(() => import('./pages/services/Services'))
 const Contact = lazy(() => import('./pages/contact/Contact'))
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,14 +16,14 @@ function App() {
   
   return (
     <Suspense fallback={<Loader />}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </Suspense>
   )
 }
