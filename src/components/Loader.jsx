@@ -16,7 +16,7 @@ function Loader() {
         className="w-screen h-screen flex justify-center items-center"
         initial={{ opacity: 0.5 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0.2 }}
+        transition={{duration: 0.5}}
       >
         <ScaleLoader
           color='#0ea5e9'

@@ -8,10 +8,11 @@ import { HiUser } from "react-icons/hi2";
 const ServiceSlides = () => {
   var logoSettings = {
     infinite: true,
-    speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
     initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 1024,
@@ -46,7 +47,7 @@ const ServiceSlides = () => {
 
   var reviewSettings = {
     infinite: true,
-    speed: 500,
+    speed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,

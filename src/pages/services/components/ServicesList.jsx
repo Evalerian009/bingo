@@ -1,4 +1,3 @@
-import { IoIosCopy } from "react-icons/io";
 import { services, servicesStats } from "../constants";
 
 
@@ -12,15 +11,17 @@ const ServicesList = () => {
       <div className="w-[100px] mx-auto h-[2px] bg-gray-300 mt-5" />
 
       <div className="mt-10 flex flex-col md:flex-row flex-wrap">
-        {services.map(service => ((  
+        {services.map(service => {
+          const Icon = service.icon
+          return(  
           <div key={service.header} className={`w-full md:w-1/2 lg:w-1/3 ${service.bg} ${service.textCol} py-10 px-6 text-center`}>
             <div className="w-fit mx-auto text-6xl">
-              <IoIosCopy />
+              <Icon />
             </div>
             <h3 className="mt-6 text-xl font-bold">{service.header}</h3>
             <p className="mt-3 font-[300]">{service.text}</p>
           </div>
-        )))}
+        )})}
       </div>
 
       <div className="text-center md:w-[500px] mx-auto mt-7 md:mt-[70px]">

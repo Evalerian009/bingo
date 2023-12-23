@@ -1,4 +1,11 @@
-import { IoIosCopy } from "react-icons/io";
+import { PiCopySimpleThin } from "react-icons/pi";
+import { PiAlarmThin } from "react-icons/pi";
+import { PiBriefcaseMetalThin } from "react-icons/pi";
+import { PiBookOpenThin } from "react-icons/pi";
+import { PiCropThin } from "react-icons/pi";
+import { PiHouseLineThin } from "react-icons/pi";
+
+
 import Logo1 from './assets/logo1.png'
 import Logo2 from './assets/logo-2.png'
 import Logo3 from './assets/logo-3.png'
@@ -6,42 +13,42 @@ import Logo4 from './assets/logo-4.png'
 
 export const services = [
   {
-    icon: IoIosCopy,
+    icon: PiCopySimpleThin,
     header: 'HACKING & RECOVERY',
     text: 'our expertise include hacking and recovering social media (snapchat,instagram,facebook,gmail...E.T.C) either hacked or lost passwords.',
     bg: 'bg-sky-500',
     textCol: 'text-white'
   },
   {
-    icon: IoIosCopy,
+    icon: PiAlarmThin,
     header: 'LOST FUNDS RECOVERY',
     text: 'We take priorites in helping victims of romance scam or investment scam to recover their lost money and to take down the parties involved if need be.',
     bg: 'bg-white',
     textCol: 'text-gray-800'
   },
   {
-    icon: IoIosCopy,
+    icon: PiBookOpenThin,
     header: 'SCHOOL GRADE & HACK',
     text: 'We can turn your bad school grade into good , grate or excellent one. No limits , we can do this for any school. no fear everything is done anonymosly without trace',
     bg: 'bg-sky-500',
     textCol: 'text-white'
   },
   {
-    icon: IoIosCopy,
+    icon: PiBriefcaseMetalThin,
     header: 'SPYING & LOCATION TRACKING',
     text: 'Either Android and iOS phones can be subject to our spying and tracking software capable of tracking your location, reading your texts, and listening in on phone calls without touching the targets device.',
     bg: 'bg-white',
     textCol: 'text-gray-800'
   },
   {
-    icon: IoIosCopy,
+    icon: PiCropThin,
     header: 'GIG ACCOUNT VERIFICATION & RECOVERY',
     text: 'Either permanently or temporary deactivated or suspended gig account (uber,fiver,amazon,stripe,doordas E.T.C) reach out to our agents for reactivation or verification.',
     bg: 'bg-sky-500',
     textCol: 'text-white'
   },
   {
-    icon: IoIosCopy,
+    icon: PiHouseLineThin,
     header: 'CC TOP UP AND CREDIT SCORE HACK',
     text: 'credit card Top up credit score hack available for all banks.',
     bg: 'bg-white',

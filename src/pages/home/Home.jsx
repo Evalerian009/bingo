@@ -6,10 +6,16 @@ import Stats from "./components/Stats"
 import Banner from "./components/Banner"
 import Navbar from "../../components/Navbar"
 import Footer from '../../components/Footer'
+import { motion } from "framer-motion"
 
-const Home = () => {
+const Home = ({ animation }) => {
   return (
-    <div className="">
+    <motion.div
+      variants={ animation }
+      initial = 'initial'
+      animate = 'final'
+      transition={{duration: 0.6}}
+    >
       <Navbar />
       <Hero />
       <Offers />
@@ -18,7 +24,7 @@ const Home = () => {
       <Stats />
       <Reviews />
       <Footer />
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Evalerian009.github.io/bingo/",
   "name": "bingo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -19,7 +22,7 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
-    "react-router-dom": "^6.16.0",
+    "react-router-dom": "^6.21.0",
     "react-slick": "^0.29.0",
     "react-spinners": "^0.13.8",
     "slick-carousel": "^1.8.1",

@@ -20,7 +20,7 @@ const Offers = () => {
             const Icon = offer.icon
             return(
               <div key={offer.id} className='w-full md:w-[48%] px-5 py-10 hover:shadow-2xl transition-all duration-500 rounded-xl border'>
-                <div className='hover:bg-white bg-sky-400 w-fit mx-auto  p-2 roun,,ded-full text-white hover:text-sky-500'>
+                <div className='hover:bg-white bg-sky-400 w-fit mx-auto  p-2 rounded-full text-white hover:text-sky-500'>
                   <Icon className='text-4xl' />
                 </div>
                 <h3 className='text-2xl font-semibold text-gray-700'>{offer.header}</h3>
