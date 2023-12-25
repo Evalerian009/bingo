@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 
 const Home = lazy(() => import('./pages/home/Home'))
 const About = lazy(() => import('./pages/about/About'))
@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Loader from "./components/Loader";
+import GoogleTranslate from "./components/GoogleTranslate";
 
 function LocationProvider({ children }){
   return <AnimatePresence>{ children }</AnimatePresence>
@@ -42,7 +43,9 @@ function RoutesWithAnimation(){
 
 function App() {
   
+  
   return (
+    <div>
     <Suspense fallback={<Loader />}>
       <HashRouter>
         <LocationProvider>
@@ -50,6 +53,8 @@ function App() {
         </LocationProvider>
       </HashRouter>
     </Suspense>
+    <GoogleTranslate />
+    </div>
   )
 }
 

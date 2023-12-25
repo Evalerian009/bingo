@@ -1,4 +1,5 @@
 import { footerLinksServices, footerQuickLinks, footerSocialLinks } from "./constants"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
           <ul className="mt-3 text-stone-400 flex flex-col gap-2">
             {footerLinksServices.map(link => (
               <li key={link.title}>
-                <a href={`${link.link}`} className="block hover:text-sky-500 font-light" >{link.title}</a>
+                <Link to={`${link.link}`} className="block hover:text-sky-500 font-light" >{link.title}</Link>
               </li>
             ))}
           </ul>
@@ -23,7 +24,7 @@ const Footer = () => {
           <ul className="mt-3 text-stone-400 flex flex-col gap-2">
             {footerQuickLinks.map(link => (
               <li key={link.title}>
-                <a href={`${link.link}`} className="block hover:text-sky-500 font-light" >{link.title}</a>
+                <Link to={`${link.link}`} className="block hover:text-sky-500 font-light" >{link.title}</Link>
               </li>
             ))}
           </ul>
@@ -33,7 +34,7 @@ const Footer = () => {
           <ul className="mt-3 text-stone-400 flex flex-col gap-2">
             {footerSocialLinks.map(link => (
               <li key={link.title}>
-                <a href={`${link.link}`} className="block hover:text-sky-500 font-light" >{link.title}</a>
+                <Link to={`${link.link}`} className="block hover:text-sky-500 font-light" >{link.title}</Link>
               </li>
             ))}
           </ul>
